@@ -153,6 +153,14 @@ extension UIView {
         
     }
     
+    
+//    //function can be placed in View Contoller, such that the keyboard will disappear when you tap outside of the keyboard space
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.view.endEditing(true)
+//        // This function makes it so that if you tap outside of the keyboard it will disappear.
+//    }
+
+    
 }
 
 
