@@ -81,6 +81,26 @@ let defaults = UserDefaults.standard
 // String Extensions
 // for hexadecimal
 extension String {
+    // underlines text in a button or label
+    /*
+     Use in this fashion:
+     How to use it on buttton:
+     
+     if let title = button.titleLabel?.text{
+     button.setAttributedTitle(title.getUnderLineAttributedText(), for: .normal)
+     }
+     How to use it on Labels:
+     
+     if let title = label.text{
+     label.attributedText = title.getUnderLineAttributedText()
+     }
+     
+     https: //stackoverflow.com/questions/28053334/how-to-underline-a-uilabel-in-swift
+     */
+    func getUnderLineAttributedText() -> NSAttributedString {
+        return NSMutableAttributedString(string: self, attributes: [.underlineStyle: NSUnderlineStyle.styleSingle.rawValue])
+    }
+
     
     init?(hexadecimal string: String, encoding: String.Encoding = .utf8) {
         guard let data = string.hexadecimal() else {
