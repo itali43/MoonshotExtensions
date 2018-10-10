@@ -3,8 +3,8 @@
 
 
 
-<p align="center"><img src="MoonSeeThru.png"/></p>
-<p align="center"><img src="moonshotColorBlackFull.png"/></p>
+<p align="center"><img src="MoonSeeThru.png" width=256/></p>
+<p align="center"><img src="moonshotColorBlackFull.png" width=450/></p>
 
 
 
